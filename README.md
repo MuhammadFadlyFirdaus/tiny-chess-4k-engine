@@ -6,6 +6,9 @@
 
 Compact <=4 KB pure-Python chess engine with 0x88 move generation, tapered PeSTO evaluation, bitboard pawn/king-shield evaluation, aspiration windows, null-move pruning, LMR, RFP/futility pruning, and persistent per-game transposition table.
 
+- Deterministic fixed-node search (`55,000` nodes/move, iterative deepening with aspiration windows)
+- Incremental 64-bit pawn bitboards (`passed`, `isolated`, `doubled`), king pawn shield, and endgame mop-up
+
 ## Run it
 
 ```sh
